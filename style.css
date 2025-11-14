@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.police-momo {
+  @apply font-normal; /* équivalent font-weight: 400 */
+  font-family: 'Momo Signature', cursive;
+  font-style: normal;
+}
+
+
+.police-rubik {
+  @apply font-normal; /* font-weight: 400 */
+  font-family: 'Rubik 80s Fade', system-ui;
+  font-style: normal;
+}
+
+.police-stack {
+  @apply font-normal; /* font-weight: 400 */
+  font-family: 'Stack Sans Notch', sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto; /* optionnel, selon le navigateur */
+}
+
+        
+/* Animation pour la barre de progression */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--target-width); }
+}
+
+.progress-bar {
+    animation: fillBar 1.5s ease-out forwards;
+}
